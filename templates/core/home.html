@@ -1,0 +1,71 @@
+{% extends 'core/base.html' %}
+{% block title %}Aliaga & Álvarez Asesoría — Inicio{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <p class="hero-label">Minería · Industria · Innovación</p>
+        <h1 class="hero-title">
+            Soluciones <span class="accent">tecnológicas</span><br>
+            para la industria
+        </h1>
+        <p class="hero-subtitle">
+            Optimizamos operaciones y reducimos costos con tecnología aplicada a la minería e industria, respaldada por asesoría integral y protección legal.
+        </p>
+        <div class="hero-actions">
+            <a href="{% url 'nosotros' %}" class="btn btn-primary">Conócenos</a>
+            <a href="{% url 'contacto' %}" class="btn btn-outline">Contacto →</a>
+        </div>
+    </div>
+</section>
+
+<!-- NOSOTROS PREVIEW -->
+<div class="home-section alt">
+    <div class="home-section-inner">
+        <div class="reveal">
+            <p class="section-label">Quiénes somos</p>
+            <h2 style="font-family:var(--font-display); font-size:clamp(1.8rem,3vw,2.5rem); font-weight:700; color:var(--white); margin-bottom:1.2rem; line-height:1.15;">
+                Tecnología al servicio de la industria
+            </h2>
+            <p style="color:var(--white-dim); font-size:1.05rem; line-height:1.8; margin-bottom:1.8rem;">
+                Desarrollamos soluciones tecnológicas aplicadas a la minería y la industria, diseñadas para optimizar operaciones y reducir costos con impacto real.
+            </p>
+            <a href="{% url 'nosotros' %}" class="btn btn-primary">Ver más →</a>
+        </div>
+        <div class="pillar-list reveal">
+            <div class="pillar">
+                <div class="pillar-num">01</div>
+                <div class="pillar-title">Soluciones Tecnológicas</div>
+                <div class="pillar-desc">Aplicadas a las necesidades operacionales de la minería e industria.</div>
+            </div>
+            <div class="pillar">
+                <div class="pillar-num">02</div>
+                <div class="pillar-title">Asesoría Integral</div>
+                <div class="pillar-desc">Acompañamiento en implementación de instrumentos logísticos.</div>
+            </div>
+            <div class="pillar">
+                <div class="pillar-num">03</div>
+                <div class="pillar-title">Patentamiento Legal</div>
+                <div class="pillar-desc">Protección intelectual de sus innovaciones logísticas.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACTO CTA -->
+<div class="home-section">
+    <div style="max-width:1100px; margin:0 auto; text-align:center;">
+        <p class="section-label reveal" style="justify-content:center;">Hablemos</p>
+        <h2 class="reveal" style="font-family:var(--font-display); font-size:clamp(1.8rem,3vw,2.5rem); font-weight:700; color:var(--white); margin-bottom:1rem;">
+            ¿Tiene un desafío operacional?
+        </h2>
+        <p class="reveal" style="color:var(--white-dim); max-width:480px; margin:0 auto 2rem; font-size:1.05rem;">
+            Contáctenos y evaluamos juntos cómo podemos impactar en su operación.
+        </p>
+        <a href="{% url 'contacto' %}" class="btn btn-primary reveal">Escribir ahora</a>
+    </div>
+</div>
+
+{% endblock %}
