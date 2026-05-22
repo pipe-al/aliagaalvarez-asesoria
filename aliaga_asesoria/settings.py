@@ -8,14 +8,14 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-aliaga-asesoria-key-2
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'ayaasoria.cl',
-    'www.ayaasoria.cl',
+    'ayaasesoria.cl',
+    'www.ayaasesoria.cl',
     'aliagaalvarez-asesoria.onrender.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://ayaasoria.cl',
-    'https://www.ayaasoria.cl',
+    'https://ayaasesoria.cl',
+    'https://www.ayaasesoria.cl',
     'https://aliagaalvarez-asesoria.onrender.com',
 ]
 
